@@ -1,10 +1,10 @@
 {
-  "name": "typescript",
-  "description": "%description%",
-  "displayName": "%displayName%",
+  "name": "custom-ts-syntax",
+  "description": "Adds recognition of class variables by naming convention as a workaround for the lack of semantic highlighting in VS Code.",
+  "displayName": "Custom TypeScript Syntax",
   "version": "1.0.0",
-  "author": "vscode",
-  "publisher": "vscode",
+  "author": "Danny McGee",
+  "publisher": "dannymcgee",
   "license": "MIT",
   "engines": {
     "vscode": "*"
