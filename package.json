@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Danny McGee",
   "publisher": "dannymcgee",
+  "icon": "icon.png",
   "license": "MIT",
   "engines": {
     "vscode": "*"
