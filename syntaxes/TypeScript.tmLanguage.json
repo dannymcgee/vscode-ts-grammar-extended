@@ -496,6 +496,21 @@
 				},
 				{
 					"name": "meta.var-single-variable.expr.ts",
+					"begin": "([A-Z]+[a-z0-9]+[A-Za-z0-9]*)",
+					"beginCaptures": {
+						"1": {
+							"name": "meta.definition.variable.ts entity.name.class.ts"
+						}
+					},
+					"end": "(?=$|^|[;,=}]|(\\s+(of|in)\\s+))",
+					"patterns": [
+						{
+							"include": "#var-single-variable-type-annotation"
+						}
+					]
+				},
+				{
+					"name": "meta.var-single-variable.expr.ts",
 					"begin": "([_$[:alpha:]][_$[:alnum:]]*)",
 					"beginCaptures": {
 						"1": {
@@ -2262,6 +2277,10 @@
 					"match": "\\b(default)\\b"
 				},
 				{
+					"name": "entity.name.class.ts",
+					"match": "([A-Z]+[a-z0-9]+[A-Za-z0-9]*)"
+				},
+				{
 					"name": "variable.other.readwrite.alias.ts",
 					"match": "([_$[:alpha:]][_$[:alnum:]]*)"
 				}
@@ -3663,6 +3682,10 @@
 							"name": "variable.other.object.property.ts"
 						}
 					}
+				},
+				{
+					"name": "entity.name.class.ts",
+					"match": "([A-Z]+[a-z0-9]+[A-Za-z0-9]*)"
 				},
 				{
 					"match": "(?x)(?:\n  ([[:upper:]][_$[:digit:][:upper:]]*) |\n  ([_$[:alpha:]][_$[:alnum:]]*)\n)(?=\\s*\\??\\.\\s*[_$[:alpha:]][_$[:alnum:]]*)",
