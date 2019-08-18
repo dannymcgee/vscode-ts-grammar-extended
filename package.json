@@ -2,12 +2,14 @@
   "name": "ts-grammar-extended",
   "description": "Adds recognition of class variables by naming convention as a workaround for the lack of semantic highlighting in VS Code.",
   "displayName": "TypeScript Grammar Extended",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Danny McGee",
   "publisher": "dannymcgee",
   "license": "MIT",
   "icon": "icon.png",
-  "keywords": ["syntax"],
+  "keywords": [
+    "syntax"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dannymcgee/vscode-ts-grammar-extended"
