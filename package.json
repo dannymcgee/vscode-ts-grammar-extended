@@ -24,6 +24,9 @@
         "language": "typescript",
         "scopeName": "source.ts",
         "path": "./syntaxes/TypeScript.tmLanguage.json",
+        "embeddedLanguages": {
+          "text.html": "html"
+        },
         "tokenTypes": {
           "entity.name.type.instance.jsdoc": "other",
           "entity.name.function.tagged-template": "other",

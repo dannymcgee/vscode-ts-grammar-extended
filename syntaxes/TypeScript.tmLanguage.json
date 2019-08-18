@@ -2555,6 +2555,9 @@
 					"include": "#comment"
 				},
 				{
+					"include": "#ng-inline-template"
+				},
+				{
 					"include": "#object-literal-method-declaration"
 				},
 				{
@@ -4569,6 +4572,22 @@
 				}
 			],
 			"contentName": "meta.embedded.line.ts"
+		},
+		"ng-inline-template": {
+			"begin": "(?:\\s*)(template)(?:\\s*)(:)(?:\\s*)(`)",
+			"beginCaptures": {
+				"1": { "name": "meta.object-literal.key.ts" },
+				"2": { "name": "punctuation.separator.key-value.ts" },
+				"3": { "name": "punctuation.definition.string.template.begin.ts" }
+			},
+			"end": "`",
+			"endCaptures": {
+				"0": { "name": "punctuation.definition.string.template.end.ts" }
+			},
+			"name": "text.html.embedded.ts",
+			"patterns": [
+				{ "include": "text.html.basic" }
+			]
 		},
 		"regex": {
 			"patterns": [

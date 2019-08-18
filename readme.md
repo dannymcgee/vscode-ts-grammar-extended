@@ -1,5 +1,7 @@
 # TypeScript Grammar Extended
 
-Currently, this extension only does one thing: variable and function names written in PascalCase will be tokenized as class names, following ubiquitous TypeScript/JavaScript naming conventions. This is a workaround for VS Code's current lack of support for semantic syntax highlighting, and hopefully will become obsolete in the near future.
+This extension adds a handful of features to VS Code's default TypeScript grammar.
 
-The existing TextMate grammar for TypeScript is already quite robust and is otherwise unmodified here, but I was tired of seeing class names (in import statements and elsewhere) tokenized as ordinary variables.
+**Features:**
+- Variable, import/export, and function identifiers in PascalCase will be tokenized as class names (workaround for VS Code's lack of support for semantic syntax highlighting, which will [hopefully be fixed soon](https://github.com/microsoft/vscode/issues/585))
+- Object values in the format of ``template: `...` `` will be tokenized as embedded HTML (useful for 'inline' templates in Angular components and Angular Storybook stories)
